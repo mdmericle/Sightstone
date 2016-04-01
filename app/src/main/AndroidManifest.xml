@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sightstone.cjhmdm.sightstone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SummonerProfile"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".SummonerProfile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sightstone.cjhmdm.sightstone.SummonerProfile" />
+        </activity>
+        <activity
+            android:name=".NavigationMenu"
+            android:label="@string/title_activity_navigation_menu"
+            android:parentActivityName=".SummonerProfile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sightstone.cjhmdm.sightstone.SummonerProfile" />
+        </activity>
+        <activity
+            android:name=".ChampionInfo"
+            android:label="@string/title_activity_champion_info"
+            android:parentActivityName=".NavigationMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sightstone.cjhmdm.sightstone.NavigationMenu" />
+        </activity>
+        <activity
+            android:name=".RankedInfo"
+            android:label="@string/title_activity_ranked_info"
+            android:parentActivityName=".SummonerProfile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sightstone.cjhmdm.sightstone.SummonerProfile" />
+        </activity>
+        <activity
+            android:name=".MatchView"
+            android:label="@string/title_activity_match_view"
+            android:parentActivityName=".RankedInfo"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sightstone.cjhmdm.sightstone.RankedInfo" />
+        </activity>
+        <activity
+            android:name=".ChampionList"
+            android:label="@string/title_activity_champion_list"
+            android:parentActivityName=".NavigationMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sightstone.cjhmdm.sightstone.NavigationMenu" />
+        </activity>
+        <activity
+            android:name=".CurrentMatch"
+            android:label="@string/title_activity_current_match"
+            android:parentActivityName=".SummonerProfile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sightstone.cjhmdm.sightstone.SummonerProfile" />
+        </activity>
+    </application>
+
+</manifest>

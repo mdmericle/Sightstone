@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sightstone</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_navigation_menu">NavigationMenu</string>
+    <string name="title_activity_champion_info">ChampionInfo</string>
+    <string name="title_activity_ranked_info">RankedInfo</string>
+    <string name="title_activity_match_view">MatchView</string>
+    <string name="title_activity_champion_list">ChampionList</string>
+    <string name="title_activity_current_match">CurrentMatch</string>
+</resources>
